@@ -51,7 +51,7 @@
     [self.activity stopAnimating];
     self.locationLabel.text = [NSString stringWithFormat:@"%.1f, %.1f", userLocation.coordinate.latitude, userLocation.coordinate.longitude];
     
-    [[FSFourSquareVenueSearchHelper sharedInstance] getVenueInformationForText:@"cafe" withSuccess:^(NSArray *array) {
+    [[FSFourSquareVenueSearchHelper sharedInstance] getVenueInformationForText:@"juice" withSuccess:^(NSArray *array) {
         NSLog(@"____________");
         for (FSFourSquareVenueObject *object in array) {
             NSLog(@"%@", object.locationName);

@@ -21,8 +21,8 @@
 		2FCCC1E618BE17D300742339 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCCC1C818BE17D300742339 /* UIKit.framework */; };
 		2FCCC1EE18BE17D300742339 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FCCC1EC18BE17D300742339 /* InfoPlist.strings */; };
 		2FCCC1F018BE17D300742339 /* FourSquareDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCCC1EF18BE17D300742339 /* FourSquareDemoTests.m */; };
-		2FFCA46118BEFD3E00CA7C93 /* FSFourSquareVenueSearchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCA46018BEFD3E00CA7C93 /* FSFourSquareVenueSearchHelper.m */; };
-		2FFCA46518BF0D5C00CA7C93 /* FSFourSquareVenueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCA46418BF0D5C00CA7C93 /* FSFourSquareVenueObject.m */; };
+		2FFCA46B18BF282A00CA7C93 /* FSFourSquareVenueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCA46818BF282A00CA7C93 /* FSFourSquareVenueObject.m */; };
+		2FFCA46C18BF282A00CA7C93 /* FSFourSquareVenueSearchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCA46A18BF282A00CA7C93 /* FSFourSquareVenueSearchHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +55,10 @@
 		2FCCC1EB18BE17D300742339 /* FourSquareDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FourSquareDemoTests-Info.plist"; sourceTree = "<group>"; };
 		2FCCC1ED18BE17D300742339 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2FCCC1EF18BE17D300742339 /* FourSquareDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourSquareDemoTests.m; sourceTree = "<group>"; };
-		2FFCA45F18BEFD3E00CA7C93 /* FSFourSquareVenueSearchHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFourSquareVenueSearchHelper.h; sourceTree = "<group>"; };
-		2FFCA46018BEFD3E00CA7C93 /* FSFourSquareVenueSearchHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSFourSquareVenueSearchHelper.m; sourceTree = "<group>"; };
-		2FFCA46318BF0D5C00CA7C93 /* FSFourSquareVenueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFourSquareVenueObject.h; sourceTree = "<group>"; };
-		2FFCA46418BF0D5C00CA7C93 /* FSFourSquareVenueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSFourSquareVenueObject.m; sourceTree = "<group>"; };
+		2FFCA46718BF282A00CA7C93 /* FSFourSquareVenueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFourSquareVenueObject.h; sourceTree = "<group>"; };
+		2FFCA46818BF282A00CA7C93 /* FSFourSquareVenueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSFourSquareVenueObject.m; sourceTree = "<group>"; };
+		2FFCA46918BF282A00CA7C93 /* FSFourSquareVenueSearchHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFourSquareVenueSearchHelper.h; sourceTree = "<group>"; };
+		2FFCA46A18BF282A00CA7C93 /* FSFourSquareVenueSearchHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSFourSquareVenueSearchHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +118,7 @@
 		2FCCC1CA18BE17D300742339 /* FourSquareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2FFCA46618BF282A00CA7C93 /* FourSquareWrapper */,
 				2FCCC1D318BE17D300742339 /* FSAppDelegate.h */,
 				2FCCC1D418BE17D300742339 /* FSAppDelegate.m */,
 				2FCCC1D618BE17D300742339 /* Main.storyboard */,
@@ -125,10 +126,6 @@
 				2FCCC1DA18BE17D300742339 /* FSViewController.m */,
 				2FCCC1DC18BE17D300742339 /* Images.xcassets */,
 				2FCCC1CB18BE17D300742339 /* Supporting Files */,
-				2FFCA45F18BEFD3E00CA7C93 /* FSFourSquareVenueSearchHelper.h */,
-				2FFCA46018BEFD3E00CA7C93 /* FSFourSquareVenueSearchHelper.m */,
-				2FFCA46318BF0D5C00CA7C93 /* FSFourSquareVenueObject.h */,
-				2FFCA46418BF0D5C00CA7C93 /* FSFourSquareVenueObject.m */,
 			);
 			path = FourSquareDemo;
 			sourceTree = "<group>";
@@ -160,6 +157,17 @@
 				2FCCC1EC18BE17D300742339 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FFCA46618BF282A00CA7C93 /* FourSquareWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				2FFCA46718BF282A00CA7C93 /* FSFourSquareVenueObject.h */,
+				2FFCA46818BF282A00CA7C93 /* FSFourSquareVenueObject.m */,
+				2FFCA46918BF282A00CA7C93 /* FSFourSquareVenueSearchHelper.h */,
+				2FFCA46A18BF282A00CA7C93 /* FSFourSquareVenueSearchHelper.m */,
+			);
+			path = FourSquareWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,10 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FFCA46B18BF282A00CA7C93 /* FSFourSquareVenueObject.m in Sources */,
 				2FCCC1D118BE17D300742339 /* main.m in Sources */,
-				2FFCA46118BEFD3E00CA7C93 /* FSFourSquareVenueSearchHelper.m in Sources */,
+				2FFCA46C18BF282A00CA7C93 /* FSFourSquareVenueSearchHelper.m in Sources */,
 				2FCCC1D518BE17D300742339 /* FSAppDelegate.m in Sources */,
-				2FFCA46518BF0D5C00CA7C93 /* FSFourSquareVenueObject.m in Sources */,
 				2FCCC1DB18BE17D300742339 /* FSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
